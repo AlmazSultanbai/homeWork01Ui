@@ -110,16 +110,6 @@
                                             <constraint firstAttribute="height" constant="130" id="r3r-Ey-jFW"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOm-OR-eBz" userLabel="SignUpButton">
-                                        <rect key="frame" x="153.33333333333337" y="364" width="239.66666666666663" height="29.333333333333314"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="29.329999999999998" id="sg8-mq-SlV"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sign Up">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        </buttonConfiguration>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xf8-SB-EpM">
                                         <rect key="frame" x="10" y="371" width="143.33333333333334" height="15.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -157,13 +147,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOm-OR-eBz" userLabel="SignUpButton">
+                                        <rect key="frame" x="153.33333333333334" y="364" width="71" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="D3Y-Wo-Nag" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="240.66999999999999" id="0tl-CW-fO8"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HOm-OR-eBz" secondAttribute="trailing" constant="20" symbolic="YES" id="1sN-ZQ-NZ5"/>
                                     <constraint firstItem="70x-Fv-VF2" firstAttribute="leading" secondItem="DWZ-05-y1F" secondAttribute="trailing" constant="15" id="5NZ-eN-Yii"/>
                                     <constraint firstItem="969-vC-QUg" firstAttribute="centerX" secondItem="hz6-4B-w4v" secondAttribute="centerX" id="5yA-le-b17"/>
-                                    <constraint firstItem="HOm-OR-eBz" firstAttribute="leading" secondItem="xf8-SB-EpM" secondAttribute="trailing" id="D1N-cQ-y57"/>
+                                    <constraint firstItem="HOm-OR-eBz" firstAttribute="leading" secondItem="xf8-SB-EpM" secondAttribute="trailing" id="Afd-iF-AOe"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gDd-Mh-l6e" secondAttribute="trailing" constant="314" id="D8e-Tk-emG"/>
                                     <constraint firstAttribute="bottom" secondItem="g4O-md-gjF" secondAttribute="bottom" id="DFc-Dg-kE0"/>
                                     <constraint firstAttribute="trailing" secondItem="D3Y-Wo-Nag" secondAttribute="trailing" constant="22" id="Dky-RR-XEJ"/>
@@ -173,7 +171,6 @@
                                     <constraint firstItem="969-vC-QUg" firstAttribute="top" secondItem="70x-Fv-VF2" secondAttribute="bottom" constant="35" id="IDS-kC-gw7"/>
                                     <constraint firstItem="b6Q-24-6Ah" firstAttribute="top" secondItem="Hhe-vq-oVY" secondAttribute="bottom" constant="13" id="IEM-Cs-wj7"/>
                                     <constraint firstItem="D3Y-Wo-Nag" firstAttribute="top" secondItem="0wg-B5-Euv" secondAttribute="bottom" constant="3" id="IGg-vQ-DLE"/>
-                                    <constraint firstItem="HOm-OR-eBz" firstAttribute="trailing" secondItem="g4O-md-gjF" secondAttribute="trailing" id="JR3-J5-mb6"/>
                                     <constraint firstAttribute="height" constant="442" id="JxK-Y4-aYz"/>
                                     <constraint firstItem="0wg-B5-Euv" firstAttribute="leading" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="20" id="KUp-ez-t7a"/>
                                     <constraint firstItem="70x-Fv-VF2" firstAttribute="top" secondItem="0wg-B5-Euv" secondAttribute="bottom" constant="43" id="M61-yd-cMP"/>
@@ -181,10 +178,10 @@
                                     <constraint firstItem="xf8-SB-EpM" firstAttribute="leading" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="10" id="S0p-EJ-cEa"/>
                                     <constraint firstItem="g4O-md-gjF" firstAttribute="leading" secondItem="hz6-4B-w4v" secondAttribute="leading" id="Y84-r9-eEl"/>
                                     <constraint firstItem="H0w-vn-eGB" firstAttribute="leading" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="23" id="bmn-JP-ZUs"/>
-                                    <constraint firstItem="HOm-OR-eBz" firstAttribute="top" secondItem="969-vC-QUg" secondAttribute="bottom" constant="38" id="cUS-WP-sfJ"/>
                                     <constraint firstAttribute="trailing" secondItem="0wg-B5-Euv" secondAttribute="trailing" constant="20" id="dtV-ac-XEi"/>
                                     <constraint firstItem="Hhe-vq-oVY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="20" id="gK0-eS-E3O"/>
                                     <constraint firstItem="0wg-B5-Euv" firstAttribute="top" secondItem="H0w-vn-eGB" secondAttribute="bottom" id="grJ-cH-3JJ"/>
+                                    <constraint firstItem="HOm-OR-eBz" firstAttribute="top" secondItem="969-vC-QUg" secondAttribute="bottom" constant="38" id="h9I-tf-TU4"/>
                                     <constraint firstItem="DWZ-05-y1F" firstAttribute="top" secondItem="0wg-B5-Euv" secondAttribute="bottom" constant="44" id="hFb-QU-jhs"/>
                                     <constraint firstItem="gDd-Mh-l6e" firstAttribute="leading" secondItem="hz6-4B-w4v" secondAttribute="leading" constant="23" id="mmY-7R-Bag"/>
                                     <constraint firstAttribute="trailing" secondItem="g4O-md-gjF" secondAttribute="trailing" id="n0u-qg-iLX"/>
@@ -204,12 +201,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY2-zL-Wmb">
+                                <rect key="frame" x="19.999999999999986" y="315" width="216.66666666666663" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.19607841970000001" green="0.44705885649999999" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qY2-zL-Wmb" secondAttribute="trailing" symbolic="YES" id="8Ig-lH-Anw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Kn-in-k6Q" secondAttribute="trailing" id="AuE-QF-06K"/>
                             <constraint firstItem="hz6-4B-w4v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="358" id="GOJ-zy-rnv"/>
+                            <constraint firstItem="qY2-zL-Wmb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pfg-8Z-6bG"/>
+                            <constraint firstItem="qY2-zL-Wmb" firstAttribute="top" secondItem="9Kn-in-k6Q" secondAttribute="bottom" id="V6V-JU-LZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hz6-4B-w4v" secondAttribute="trailing" id="dac-2O-lvr"/>
                             <constraint firstItem="9Kn-in-k6Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jFU-q3-LmT"/>
                             <constraint firstItem="9Kn-in-k6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vLh-Xq-uTR"/>
