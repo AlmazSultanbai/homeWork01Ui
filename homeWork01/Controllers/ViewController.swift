@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var emailText: UITextField!
     
     @IBOutlet weak var passwordText: UITextField!
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func eyeButton(_ sender: UIButton) {
         
         if passwordText.isSecureTextEntry == true {
@@ -44,24 +44,33 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func signUpButton1(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSignUp", sender: self)
+    }
     
-    @IBAction func signUpButton(_ sender: UIButton) {
+    @IBAction func signInButton(_ sender: UIButton) {
         let email = enterApproved(textField: emailText, underlin: emailUnderline)
         let pass = enterApproved(textField: passwordText, underlin: passwordUnderline)
         if email && pass {
-           performSegue(withIdentifier: "success", sender: self)
+            performSegue(withIdentifier: "success", sender: self)
         }
     }
     private func enterApproved(textField: UITextField, underlin: UIView) -> Bool {
-        if textField.text == "" {
+        if textField.text?.isEmpty ?? true {
             textField.placeholder = "Please fill the field"
-            underlin.backgroundColor = UIColor.red
+            textField.layer.borderWidth = 1
+            textField.layer.borderColor = UIColor.red.cgColor
+            //underlin.backgroundColor = UIColor.red
             return false
         } else {
-            underlin.backgroundColor = #colorLiteral(red: 0.8823529412, green: 0.8901960784, blue: 0.9098039216, alpha: 1)
+            //underlin.backgroundColor = #colorLiteral(red: 0.8823529412, green: 0.8901960784, blue: 0.9098039216, alpha: 1)
+            textField.layer.borderWidth = 0
             return true
         }
         
     }
+    
 }
+
+
 
